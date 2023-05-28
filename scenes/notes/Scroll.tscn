@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://do1umhs6uqrr5"]
+
+[ext_resource type="Script" path="res://scripts/game/Notes/Scroll.gd" id="1_j3iik"]
+[ext_resource type="Texture2D" uid="uid://8x00m26pvd1e" path="res://prefabs/default_skin/cursor.png" id="2_p66fh"]
+
+[node name="Scroll" type="Node3D"]
+script = ExtResource("1_j3iik")
+
+[node name="NoteSprite" type="Sprite3D" parent="."]
+transform = Transform3D(0.05, 0, 0, 0, -2.18557e-09, -0.05, 0, 0.05, -2.18557e-09, 0, 0, 0)
+texture = ExtResource("2_p66fh")

@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://rva7di1ula8u"]
+[gd_scene load_steps=8 format=3 uid="uid://rva7di1ula8u"]
 
 [ext_resource type="Script" path="res://scripts/game/Game.gd" id="1_2mtk0"]
 [ext_resource type="Texture2D" uid="uid://cjb2wnln251d2" path="res://prefabs/default_skin/plane_lines.png" id="1_ja2sx"]
 [ext_resource type="Texture2D" uid="uid://8x00m26pvd1e" path="res://prefabs/default_skin/cursor.png" id="2_gmqlh"]
 [ext_resource type="Script" path="res://scripts/game/Cursor.gd" id="4_3ca16"]
+[ext_resource type="Script" path="res://scripts/game/managers/AudioManager.gd" id="5_qswqu"]
+[ext_resource type="Script" path="res://scripts/game/managers/NoteManager.gd" id="6_6jfp6"]
 
 [sub_resource type="Environment" id="Environment_jrs4v"]
 background_mode = 1
@@ -15,15 +17,28 @@ script = ExtResource("1_2mtk0")
 environment = SubResource("Environment_jrs4v")
 
 [node name="PlayerCamera" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.986777, 0.162086, 0, -0.162086, 0.986777, 0, 0.275368, 1.40317)
+transform = Transform3D(1, 0, 0, 0, 0.564938, 0.825133, 0, -0.825133, 0.564938, 0, 0.937491, 0.691786)
+fov = 71.8
+near = 0.246
 
 [node name="NotePlane" type="Sprite3D" parent="."]
-transform = Transform3D(23.2622, 0, 0, 0, -0.0128633, -1, 0, 294279, -4.37114e-08, 0, -0.356835, -14.0523)
+transform = Transform3D(21.8351, 0, 0, 0, -0.0128633, -1, 0, 294279, -4.37114e-08, 0, 0, -14.052)
 pixel_size = 0.0001
 texture_filter = 1
 texture = ExtResource("1_ja2sx")
 
 [node name="Cursor" type="Sprite3D" parent="."]
-transform = Transform3D(0.0172948, 0, 0, 0, -1.37115e-09, -1.00286, 0, 0.0313682, -4.38362e-08, 0, -0.350459, 0.664262)
+transform = Transform3D(1.7783, 0, 0, 0, -1.12518e-07, -0.995629, 0, 2.57411, -4.35201e-08, 0, 0, 0.664)
+pixel_size = 0.0001
+texture_filter = 2
 texture = ExtResource("2_gmqlh")
 script = ExtResource("4_3ca16")
+
+[node name="MusicStream" type="AudioStreamPlayer" parent="."]
+volume_db = -31.856
+
+[node name="AudioManager" type="Node3D" parent="."]
+script = ExtResource("5_qswqu")
+
+[node name="NoteSpawner" type="Node3D" parent="."]
+script = ExtResource("6_6jfp6")

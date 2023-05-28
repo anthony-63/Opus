@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://ri2ibbm4tatn"]
+
+[ext_resource type="Script" path="res://scripts/game/Notes/GoldLong.gd" id="1_jp45g"]
+[ext_resource type="Texture2D" uid="uid://8x00m26pvd1e" path="res://prefabs/default_skin/cursor.png" id="2_0mcgq"]
+
+[node name="GoldLong" type="Node3D"]
+script = ExtResource("1_jp45g")
+
+[node name="NoteSprite" type="Sprite3D" parent="."]
+transform = Transform3D(0.05, 0, 0, 0, -2.18557e-09, -0.05, 0, 0.05, -2.18557e-09, 0, 0, 0)
+texture = ExtResource("2_0mcgq")

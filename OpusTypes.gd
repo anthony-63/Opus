@@ -2,9 +2,23 @@ extends Node
 
 enum NoteType {
 	Normal,
-	LongNormal,
+	NormalLong,
 	Gold,
-	LongGold,
+	GoldLong,
 	Scroll,
 	Swipe,
+}
+
+enum NoteDirection {
+	UP,
+	DOWN,
+	LEFT,
+	RIGHT,
+}
+
+enum AudioFormat {
+	OGG,
+	WAV,
+	MP3,
+	UNKNOWN,
 }

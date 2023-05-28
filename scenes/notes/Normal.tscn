@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkiyi4yemup1g"]
+
+[ext_resource type="Texture2D" uid="uid://8x00m26pvd1e" path="res://prefabs/default_skin/cursor.png" id="1_6pxeb"]
+[ext_resource type="Script" path="res://scripts/game/Notes/Normal.gd" id="1_lhp03"]
+
+[node name="Normal" type="Node3D"]
+script = ExtResource("1_lhp03")
+
+[node name="NoteSprite" type="Sprite3D" parent="."]
+transform = Transform3D(0.05, 0, 0, 0, -2.18557e-09, -0.05, 0, 0.05, -2.18557e-09, 0, 0, 0)
+texture = ExtResource("1_6pxeb")
