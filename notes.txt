@@ -1,0 +1,13 @@
+Ok, this is just a notes file for ideas before i start writing this game.
+
+----- Concept -----
+The concept should be a chunithum type game, but you control a cursor with your mouse
+
+----- Note types -----
+Normal: Notes you click
+Normal Long: Notes you click, hold, and release for.
+Gold: Normal notes, but clicking is not required
+Gold Long: Just keep your mouse over them
+Swipe: Swipe notes can be in 4 directions, up, left, right, down, for these you swipe your mouse in the direction of the arrow on the note
+Scroll: Scroll notes can be in 2 directions, up and down, for these you use your scroll wheel to hit them
+
