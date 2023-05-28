@@ -10,4 +10,3 @@ Gold: Normal notes, but clicking is not required
 Gold Long: Just keep your mouse over them
 Swipe: Swipe notes can be in 4 directions, up, left, right, down, for these you swipe your mouse in the direction of the arrow on the note
 Scroll: Scroll notes can be in 2 directions, up and down, for these you use your scroll wheel to hit them
-
