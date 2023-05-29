@@ -46,6 +46,6 @@ func _process(delta):
 		if $"../AudioManager".current_time > Opus.current_map.note_data[note_index].ms:
 			spawn_note()
 			note_index += 1
-	
+			
 	for child in get_children():
 		child.update(delta)

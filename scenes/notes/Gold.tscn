@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://by6w8mn7lf2i0"]
 
 [ext_resource type="Script" path="res://scripts/game/Notes/Gold.gd" id="1_bj0x2"]
-[ext_resource type="Texture2D" uid="uid://8x00m26pvd1e" path="res://prefabs/default_skin/cursor.png" id="2_f74jd"]
+[ext_resource type="Texture2D" uid="uid://brtsqa8w388p4" path="res://prefabs/default_skin/gold_note.png" id="2_sooh7"]
 
 [node name="Gold" type="Node3D"]
 script = ExtResource("1_bj0x2")
 
 [node name="NoteSprite" type="Sprite3D" parent="."]
 transform = Transform3D(0.05, 0, 0, 0, -2.18557e-09, -0.05, 0, 0.05, -2.18557e-09, 0, 0, 0)
-texture = ExtResource("2_f74jd")
+texture = ExtResource("2_sooh7")

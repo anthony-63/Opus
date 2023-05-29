@@ -1,11 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://do1umhs6uqrr5"]
+[gd_scene load_steps=4 format=3 uid="uid://do1umhs6uqrr5"]
 
 [ext_resource type="Script" path="res://scripts/game/Notes/Scroll.gd" id="1_j3iik"]
-[ext_resource type="Texture2D" uid="uid://8x00m26pvd1e" path="res://prefabs/default_skin/cursor.png" id="2_p66fh"]
+[ext_resource type="Texture2D" uid="uid://dgh2kr71ogen4" path="res://prefabs/default_skin/scroll_note_base.png" id="2_git2q"]
+[ext_resource type="Texture2D" uid="uid://df75wj3ky7gm1" path="res://prefabs/default_skin/scroll_note_arrow.png" id="3_qfutm"]
 
 [node name="Scroll" type="Node3D"]
 script = ExtResource("1_j3iik")
 
 [node name="NoteSprite" type="Sprite3D" parent="."]
 transform = Transform3D(0.05, 0, 0, 0, -2.18557e-09, -0.05, 0, 0.05, -2.18557e-09, 0, 0, 0)
-texture = ExtResource("2_p66fh")
+texture = ExtResource("2_git2q")
+
+[node name="Arrow" type="Sprite3D" parent="."]
+transform = Transform3D(-0.386604, 1.83465e-08, 2.10512e-08, -6.59771e-09, 0.0926959, -0.410669, -3.31478e-08, -0.232427, -0.163782, 0, 0.0212209, -0.0185939)
+pixel_size = 0.0025
+texture = ExtResource("3_qfutm")

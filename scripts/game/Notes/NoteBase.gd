@@ -3,11 +3,15 @@ extends Node
 @export var note_data = {}
 @export var hittable = false
 
+func init_based_on_type():
+	pass
+
 func init():
 	$NoteSprite.scale.x = note_data.width
 	self.transform.origin.z = -2.1
 	self.transform.origin.x = note_data.x
-
+	init_based_on_type()
+	
 func check_hit():
 	pass
 
